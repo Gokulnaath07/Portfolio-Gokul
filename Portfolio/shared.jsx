@@ -13,7 +13,7 @@ const CONTENT = {
   phone: "+1 224-587-4888",
   linkedin: "linkedin.com/in/gokulnaathg",
   site: "gokulnaath07.com",
-  resumePdf: "resume/Gokulnaath_Govindaraj_Resume.html",
+  resumePdf: "resume/Gokulnaath_Govindaraj_Resume.pdf",
   status: "OPT through Feb 2029 · no sponsorship needed",
   tagline: "AI systems engineer & technical founder",
   portrait: "assets/portrait.jpg",
@@ -191,7 +191,7 @@ function useTheme(defaultTheme = "light") {
   });
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    try { localStorage.setItem("portfolio-theme", theme); } catch {}
+    try { localStorage.setItem("portfolio-theme", theme); } catch { }
   }, [theme]);
   return [theme, () => setTheme(t => t === "light" ? "dark" : "light")];
 }
@@ -302,7 +302,7 @@ function CursorAccent({ color = "rgba(116, 0, 1, 0.18)", size = 520 }) {
     const tick = () => {
       x += (tx - x) * 0.12;
       y += (ty - y) * 0.12;
-      el.style.transform = `translate3d(${x - size/2}px, ${y - size/2}px, 0)`;
+      el.style.transform = `translate3d(${x - size / 2}px, ${y - size / 2}px, 0)`;
       raf = requestAnimationFrame(tick);
     };
     window.addEventListener("pointermove", onMove);
