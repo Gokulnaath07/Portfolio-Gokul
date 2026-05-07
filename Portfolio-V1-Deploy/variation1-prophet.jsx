@@ -59,7 +59,7 @@ const ProphetApp = () => {
           </div>
           <div className="p-col p-col-photo">
             <figure className="p-photo">
-              <img src={CONTENT.portraitHalftone} alt="Gokulnaath Govindaraj" />
+              <img src={CONTENT.portraitDuotone} alt="Gokulnaath Govindaraj" />
               <figcaption>Govindaraj at commencement, Wright State University, 2025.</figcaption>
             </figure>
           </div>
