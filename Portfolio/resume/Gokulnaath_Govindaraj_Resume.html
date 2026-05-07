@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gokulnaath Govindaraj — Resume</title>
+<style>
+  @page { size: letter; margin: 0.5in; }
+  :root { --ink:#1a1a1a; --crimson:#740001; --gold:#9c7a1f; --rule:#dcd6c8; }
+  *{ box-sizing:border-box }
+  html,body{ margin:0; padding:0; background:#fff; color:var(--ink); font-family: Georgia, "Times New Roman", serif; font-size:10.5pt; line-height:1.42 }
+  body{ padding:0.5in; max-width: 8.5in; margin:0 auto }
+  h1{ font-family: "Playfair Display", Georgia, serif; font-size:26pt; margin:0; letter-spacing:-0.01em; color:var(--crimson) }
+  .meta{ display:flex; flex-wrap:wrap; gap:8px 14px; font-size:9.5pt; color:#444; margin-top:6px; }
+  .meta a{ color:var(--ink); text-decoration:none; border-bottom:1px solid #bbb }
+  h2{ font-family: "Playfair Display", Georgia, serif; font-size:13pt; margin:18px 0 6px; color:var(--crimson); border-bottom:1.5px solid var(--crimson); padding-bottom:2px; letter-spacing:0.02em; text-transform:uppercase }
+  h3{ font-size:11pt; margin:10px 0 2px; }
+  .row{ display:flex; justify-content:space-between; gap:12px; align-items:baseline }
+  .role{ font-style:italic; color:#444; font-size:10pt }
+  ul{ margin:4px 0 0; padding-left:18px }
+  li{ margin:2px 0 }
+  .summary{ font-size:10.5pt; line-height:1.5 }
+  .skills div{ margin:3px 0 }
+  .skills b{ color:var(--crimson) }
+  .award{ background:#faf3e0; border-left:3px solid var(--gold); padding:6px 10px; font-size:10pt; margin-top:4px }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Gokulnaath Govindaraj</h1>
+    <div class="meta">
+      <span>Fairborn, OH</span>
+      <span>+1 224-587-4888</span>
+      <a href="mailto:gokulnaathgovindaraj07@gmail.com">gokulnaathgovindaraj07@gmail.com</a>
+      <a href="https://linkedin.com/in/gokulnaathg">linkedin.com/in/gokulnaathg</a>
+      <a href="https://gokulnaath07.com">gokulnaath07.com</a>
+    </div>
+  </header>
+
+  <h2>Summary</h2>
+  <p class="summary">AI systems engineer and technical founder with production experience orchestrating multi-agent workflows at Handshake AI, owning a Legal Hub feature end to end at AriesView (NEC-backed), and shipping AccioFirst as sole technical founder to Runner-Up at Wright Venture 2026. Graduating December 2025 with an M.S. in Computer Science from Wright State University. Authorized to work in the US on OPT through February 2029 with no sponsorship required.</p>
+
+  <h2>Education</h2>
+  <div class="row"><b>Wright State University</b><span>Aug 2023 – Dec 2025</span></div>
+  <div class="role">M.S. Computer Science · GPA 3.6</div>
+  <div class="row" style="margin-top:6px"><b>Anna University</b><span>Aug 2018 – Apr 2022</span></div>
+  <div class="role">B.E. Mechatronics Engineering</div>
+
+  <h2>Honors &amp; Recognition</h2>
+  <div class="award"><b>Runner-Up, Wright Venture 2026</b> · Wright State University · April 2026 · $2,000 awarded for AccioFirst</div>
+  <div class="award" style="margin-top:6px"><b>Technical Lead, NSF I-Corps Cohort</b> · University of Connecticut · Sep 2024 · $1,000 awarded ($2,500 team grant)</div>
+
+  <h2>Experience</h2>
+
+  <div class="row"><h3>Handshake AI · AI Trainer (Helix Project)</h3><span>Apr 2026 – Present · Remote</span></div>
+  <ul>
+    <li>Orchestrate multi-agent software engineering workflows on Handshake AI's Helix project, designing Ralph loop autonomy patterns and atomic prompt scaffolding that guide Claude Code agents to solve complex bounties without implementation leakage.</li>
+    <li>Engineer prompts using atomic instruction design and strict completion promises that enable headless AI agents to iterate autonomously, managing context rotation via Git and the filesystem to prevent LLM context pollution across long sessions.</li>
+    <li>Deliver golden-solution pull requests verified against Pass-to-Pass and Fail-to-Pass automated validation gates, generating elite training data at production quality standards.</li>
+  </ul>
+
+  <div class="row"><h3>AriesView (NEC-backed) · Software Engineer</h3><span>2024 – Present</span></div>
+  <ul>
+    <li>Architected the RAG pipeline for a CRE due diligence platform, designing chunking strategies, embedding pipelines, and hybrid BM25 + dense retrieval against a Weaviate vector store to power document-aware Q&amp;A over financial and lease documents.</li>
+    <li>Identified that initial RAG evaluation metrics reflected insufficient test coverage rather than pipeline failure, redesigning the framework with 15 legal and financial documents and two 300-query sets to establish meaningful retrieval benchmarks including 93% recall.</li>
+    <li>Diagnosed PostgreSQL connection pool saturation under ~2,000 RPS using k6 load tests, reducing p95 API latency from 1.8s to 200ms and cutting timeout errors from 1.2% to 0.1%.</li>
+    <li>Owned the Legal Hub feature end to end, including JSON schema design from manual analysis of 15 leases, an OCR-to-GPT-4.1 extraction microservice, and the analyst review UI.</li>
+    <li>Engineered a GraphQL pagination layer serving 100+ OCR-extracted document units to the React frontend on user navigation, replacing a bulk-fetch pattern that would have overloaded the database.</li>
+    <li>Shipped 15+ Playwright end-to-end tests alongside feature work, reducing manual QA time by ~40% across GitLab CI/CD deployments.</li>
+  </ul>
+
+  <div class="row"><h3>University of Connecticut · NSF I-Corps Technical Lead</h3><span>Sep 2024</span></div>
+  <ul>
+    <li>Independently designed the Spring Boot backend architecture for a peer-mentoring platform, coordinating API contracts with the front-end team and integrating an LLM-powered chatbot via Spring AI.</li>
+  </ul>
+
+  <div class="row"><h3>Porter Lee Corporation · Software Engineering Intern</h3><span>2023</span></div>
+  <ul>
+    <li>Navigated a 30,000+ line Java Android codebase to build REST API endpoints for an evidence management system, reducing JSON deserialization time by ~180ms per request.</li>
+    <li>Implemented JWT-based authentication and multithreaded background sync that reduced average UI freeze duration by ~300ms during data refresh cycles.</li>
+  </ul>
+
+  <div class="row"><h3>Cognizant · QA Engineer</h3><span>2022 – 2023</span></div>
+  <ul>
+    <li>Navigated an unfamiliar Selenium + Java QA codebase, identifying 10+ critical production defects escalated to development before release.</li>
+  </ul>
+
+  <h2>Selected Projects</h2>
+  <div class="row"><h3>AccioFirst · Sole Technical Founder</h3><span>2026 · Runner-Up, Wright Venture</span></div>
+  <ul>
+    <li>Designed and shipped AccioFirst end to end: a Next.js + FastAPI app integrating BrightData scraping, Crunchbase signals, and two LLM models (Gemini 2.5 Flash-Lite, Claude 3.5 Haiku) for ghost-job scoring and application autopsy.</li>
+    <li>Modeled unit economics: ~$0.0002 per scan, ~$0.0046 per autopsy, break-even at 18 Pro subscribers, targeting 95% net margin at scale.</li>
+  </ul>
+
+  <div class="row"><h3>RAG System</h3><span>2024</span></div>
+  <ul>
+    <li>Designed end-to-end retrieval architecture: ingestion pipeline, chunking strategy, hybrid BM25 + dense retrieval against Weaviate.</li>
+    <li>Evaluated retrieval across a 200-query framework on real financial documents, dropping citation failures by 30% and constraining generation to verified document sections.</li>
+  </ul>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><b>AI &amp; LLM Systems:</b> RAG pipelines, hybrid retrieval (BM25 + dense), Weaviate, OCR (Docling, PyMuPDF), prompt engineering, LLM evaluation, Claude Code CLI, Ralph loops</div>
+    <div><b>Languages:</b> Python, Java, TypeScript, JavaScript, SQL, Go (developing)</div>
+    <div><b>Backend:</b> FastAPI, Spring Boot, GraphQL, SQLAlchemy, Alembic, Gunicorn, microservices</div>
+    <div><b>Frontend:</b> React, Next.js, TypeScript, shadcn/ui, Tailwind</div>
+    <div><b>Databases:</b> PostgreSQL, MongoDB (GridFS), Weaviate, Supabase, MySQL</div>
+    <div><b>Infrastructure:</b> Docker, Kubernetes (kubebuilder/envtest), AWS, GitLab CI/CD, Vercel, Azure</div>
+    <div><b>Testing:</b> pytest, Playwright, Selenium, k6 load testing, p95 latency analysis</div>
+  </div>
+</body>
+</html>

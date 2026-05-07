@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Portfolio · Three directions for Gokulnaath</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { margin: 0; background: #f0eee9; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel">
+const Frame = ({ src }) => (
+  <iframe
+    src={src}
+    style={{ width: "100%", height: "100%", border: "none", background: "white", display: "block" }}
+  />
+);
+
+const App = () => (
+  <DesignCanvas>
+    <DCSection
+      id="portfolio"
+      title="Gokulnaath Govindaraj — Portfolio"
+      subtitle="Three editorial directions in Gryffindor's palette. Click any artboard's expand icon to view fullscreen — every variation has working theme toggle, ⌘K command palette, terminal bio, animated metrics, cursor accent, and a downloadable résumé."
+    >
+      <DCArtboard id="v1" label="A · The Daily Prophet — broadsheet newspaper" width={1280} height={2400}>
+        <Frame src="variation1.html" />
+      </DCArtboard>
+      <DCArtboard id="v2" label="B · House Manuscript — illuminated editorial" width={1280} height={2400}>
+        <Frame src="variation2.html" />
+      </DCArtboard>
+      <DCArtboard id="v3" label="C · Modern Crimson — contemporary magazine" width={1280} height={2400}>
+        <Frame src="variation3.html" />
+      </DCArtboard>
+    </DCSection>
+  </DesignCanvas>
+);
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
