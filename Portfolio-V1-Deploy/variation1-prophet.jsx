@@ -4,7 +4,33 @@
 
 const ProphetApp = () => {
   const [theme, toggleTheme] = useTheme("light");
-  const today = new Date().toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+
+  // --- Live date: recomputes at midnight automatically ---
+  const getDateInfo = () => {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const diff = now - start;
+    const oneDay = 1000 * 60 * 60 * 24;
+    const dayOfYear = Math.floor(diff / oneDay);
+    const vol = now.getFullYear() - 2018 + 1; // EST. 2018 = Vol. 1
+    const dateStr = now.toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+    return { vol, no: dayOfYear, dateStr };
+  };
+  const [dateInfo, setDateInfo] = useState(getDateInfo);
+  useEffect(() => {
+    // Schedule a re-compute exactly at the next midnight
+    const scheduleRefresh = () => {
+      const now = new Date();
+      const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
+      const msUntilMidnight = midnight - now;
+      return setTimeout(() => {
+        setDateInfo(getDateInfo());
+        scheduleRefresh(); // re-arm for the following midnight
+      }, msUntilMidnight);
+    };
+    const id = scheduleRefresh();
+    return () => clearTimeout(id);
+  }, []);
 
   const cmdItems = [
     { label: "Top of page", icon: "↑", run: () => window.scrollTo({ top: 0, behavior: "smooth" }) },
@@ -35,7 +61,7 @@ const ProphetApp = () => {
 
       {/* Masthead */}
       <header className="p-masthead">
-        <div className="p-mast-rule"><span>VOL. XXVI · NO. 1</span><span>{today.toUpperCase()}</span><span>FAIRBORN, OHIO · TWO DOLLARS</span></div>
+        <div className="p-mast-rule"><span>VOL. {dateInfo.vol} · NO. {dateInfo.no}</span><span>{dateInfo.dateStr.toUpperCase()}</span><span>FAIRBORN, OHIO · TWO DOLLARS</span></div>
         <h1 className="p-mast-title">The Gokulnaath Gazette</h1>
         <div className="p-mast-sub">An occasional broadsheet on shipping software, training agents, and founding small companies that work.</div>
         <div className="p-mast-rule p-mast-rule-bot">
@@ -150,6 +176,22 @@ const ProphetApp = () => {
             </article>
           ))}
         </div>
+        <div className="p-proj-more">
+          <div className="p-proj-more-rule" />
+          <div className="p-proj-more-inner">
+            <span className="p-proj-more-label">Further reading</span>
+            <a
+              href="https://github.com/Gokulnaath07"
+              target="_blank"
+              rel="noreferrer"
+              className="p-proj-more-link"
+            >
+              See all projects on GitHub →
+            </a>
+            <span className="p-proj-more-note">github.com/Gokulnaath07</span>
+          </div>
+          <div className="p-proj-more-rule" />
+        </div>
       </section>
 
       {/* About */}
@@ -199,7 +241,7 @@ const ProphetApp = () => {
           <div className="p-contact-row">
             <a href={`https://${CONTENT.linkedin}`} target="_blank" rel="noreferrer">{CONTENT.linkedin}</a>
             <span>·</span>
-            <a href={`https://${CONTENT.site}`} target="_blank" rel="noreferrer">{CONTENT.site}</a>
+            <a href="https://github.com/Gokulnaath07" target="_blank" rel="noreferrer">github.com/Gokulnaath07</a>
             <span>·</span>
             <span>{CONTENT.phone}</span>
           </div>

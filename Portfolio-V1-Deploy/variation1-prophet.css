@@ -386,6 +386,51 @@
   text-align: right; flex: 0 0 auto;
 }
 
+/* ---- Projects · GitHub CTA ---- */
+.p-proj-more {
+  margin-top: 36px;
+}
+.p-proj-more-rule {
+  height: 1px;
+  background: var(--rule);
+}
+.p-proj-more-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 14px 0;
+  flex-wrap: wrap;
+}
+.p-proj-more-label {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.p-proj-more-link {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--crimson);
+  text-decoration: none;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 2px;
+  transition: color .15s, border-color .15s;
+}
+.p-proj-more-link:hover {
+  color: var(--crimson-deep);
+  border-color: var(--crimson);
+}
+.p-proj-more-note {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+}
+
 /* ---- About ---- */
 .p-about { max-width: 1240px; margin: 0 auto; }
 .p-about-grid {
