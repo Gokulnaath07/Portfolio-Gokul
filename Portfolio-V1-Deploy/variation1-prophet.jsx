@@ -61,7 +61,7 @@ const ProphetApp = () => {
 
       {/* Masthead */}
       <header className="p-masthead">
-        <div className="p-mast-rule"><span>VOL. {dateInfo.vol} · NO. {dateInfo.no}</span><span>{dateInfo.dateStr.toUpperCase()}</span><span>FAIRBORN, OHIO · TWO DOLLARS</span></div>
+        <div className="p-mast-rule"><span>VOL. {dateInfo.vol} · NO. {dateInfo.no}</span><span>{dateInfo.dateStr.toUpperCase()}</span><span>BOSTON, MA· TWO DOLLARS</span></div>
         <h1 className="p-mast-title">The Gokulnaath Gazette</h1>
         <div className="p-mast-sub">An occasional broadsheet on shipping software, training agents, and founding small companies that work.</div>
         <div className="p-mast-rule p-mast-rule-bot">
@@ -123,7 +123,7 @@ const ProphetApp = () => {
         <div className="p-bio-grid">
           <div className="p-bio-text">
             <p className="p-bio-quote">“The thing about being a junior engineer is nobody is going to hand you the right framing. So I started giving it to myself.”</p>
-            <p>I'm a graduate of Wright State (M.S. CS, December 2025) and Anna University (B.E. Mechatronics, 2022). I'm based in Fairborn, Ohio, and open to relocation anywhere. {CONTENT.status}.</p>
+            <p>I'm a graduate of Wright State (M.S. CS, December 2025) and Anna University (B.E. Mechatronics, 2022). I'm based in Boston, MA, and open to relocation anywhere. {CONTENT.status}.</p>
             <p>I am happiest when I'm <i>responsible for the whole thing</i>: the schema, the pipeline, the eval, the UI. AccioFirst is the proof. Legal Hub at AriesView is the proof. Helix is the proof.</p>
           </div>
           <div className="p-bio-term">
