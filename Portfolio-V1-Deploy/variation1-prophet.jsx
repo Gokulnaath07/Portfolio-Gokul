@@ -127,7 +127,7 @@ const ProphetApp = () => {
             <p>I am happiest when I'm <i>responsible for the whole thing</i>: the schema, the pipeline, the eval, the UI. AccioFirst is the proof. Legal Hub at AriesView is the proof. Helix is the proof.</p>
           </div>
           <div className="p-bio-term">
-            <VideoPortrait src={CONTENT.videoSrc} poster={CONTENT.portraitSquare} caption="A moving portrait — drop a 3-second clip to bring it to life." className="p-video" />
+            <VideoPortrait src={CONTENT.videoSrc} poster={CONTENT.portraitSquare} caption="A moving portrait — Taken during Wright Ventures." className="p-video" />
             <div style={{height: 16}} />
             <Terminal lines={CONTENT.bio} prompt="$ " charDelay={22} />
           </div>
