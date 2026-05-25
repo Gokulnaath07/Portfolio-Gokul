@@ -116,7 +116,7 @@ const ModernApp = () => {
             <div className="mc-bio-text">
               <p className="mc-bio-lead">I'm an AI systems engineer who ships. Pipelines, evals, services, the UI on top. I want to be the engineer you hand the ambiguous problem to.</p>
               <p>I'm finishing my M.S. at Wright State this December, training agents at Handshake AI, and shipping production RAG at AriesView. I founded <b>AccioFirst</b> to attack the ghost-job problem — eight months of solo work, a Wright Venture pitch, $2,000 in funding, and counting.</p>
-              <p>Based in Fairborn, Ohio. OPT through 2029. No sponsorship needed.</p>
+              <p>Based in Bosto, MA. OPT through 2029. No sponsorship needed.</p>
             </div>
             <div className="mc-bio-term">
               <VideoPortrait src={CONTENT.videoSrc} poster={CONTENT.portraitSquare} caption="A 3-second loop — drop a clip at assets/intro.mp4 to make it move." className="mc-video" />
@@ -238,7 +238,7 @@ const ModernApp = () => {
               <div><span>LinkedIn</span><a href={`https://${CONTENT.linkedin}`} target="_blank" rel="noreferrer">{CONTENT.linkedin}</a></div>
               <div><span>Site</span><a href={`https://${CONTENT.site}`} target="_blank" rel="noreferrer">{CONTENT.site}</a></div>
               <div><span>Phone</span><span>{CONTENT.phone}</span></div>
-              <div><span>Location</span><span>Fairborn, OH</span></div>
+              <div><span>Location</span><span>Bosto, MA</span></div>
             </div>
             <a className="mc-resume-cta" href={CONTENT.resumePdf} target="_blank" rel="noreferrer">⤓ Download résumé (PDF)</a>
           </div>

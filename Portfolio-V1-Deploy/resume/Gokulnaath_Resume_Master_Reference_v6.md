@@ -172,7 +172,7 @@ Verdict box at the bottom:
 - **LinkedIn:** LinkedIn.com/in/gokulnaathg
 - **GitHub:** GitHub (linked)
 - **Portfolio:** gokulnaath07.com
-- **Location:** Fairborn, Ohio (open to relocation anywhere)
+- **Location:** Bosto, MA (open to relocation anywhere)
 
 ---
 

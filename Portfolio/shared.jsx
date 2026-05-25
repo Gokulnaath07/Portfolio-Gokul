@@ -8,7 +8,7 @@ const { useState, useEffect, useRef, useCallback, useMemo } = React;
 const CONTENT = {
   name: "Gokulnaath Govindaraj",
   handle: "@gokulnaathg",
-  location: "Fairborn, Ohio · open to relocation",
+  location: "Bosto, MA · open to relocation",
   email: "gokulnaathgovindaraj07@gmail.com",
   phone: "+1 224-587-4888",
   linkedin: "linkedin.com/in/gokulnaathg",
@@ -175,7 +175,7 @@ const CONTENT = {
   ],
 
   about: {
-    location: "Fairborn, Ohio — open to relocation anywhere in the US.",
+    location: "Bosto, MA — open to relocation anywhere in the US.",
     education: [
       { school: "Wright State University", degree: "M.S. Computer Science · GPA 3.6", when: "Aug 2023 — Dec 2025" },
       { school: "Anna University", degree: "B.E. Mechatronics Engineering", when: "Aug 2018 — Apr 2022" },
