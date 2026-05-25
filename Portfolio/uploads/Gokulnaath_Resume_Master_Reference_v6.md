@@ -172,7 +172,7 @@ Verdict box at the bottom:
 - **LinkedIn:** LinkedIn.com/in/gokulnaathg
 - **GitHub:** GitHub (linked)
 - **Portfolio:** gokulnaath07.com
-- **Location:** Bosto, MA (open to relocation anywhere)
+- **Location:** Boston, MA (open to relocation anywhere)
 
 ---
 
