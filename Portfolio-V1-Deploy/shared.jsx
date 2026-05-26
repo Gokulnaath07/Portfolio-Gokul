@@ -13,7 +13,7 @@ const CONTENT = {
   phone: "+1 224-587-4888",
   linkedin: "linkedin.com/in/gokulnaathg",
   site: "gokulnaath07.com",
-  resumePdf: "resume/Gokulnaath_Govindaraj_Resume.pdf",
+  resumePdf: "resume/Gokulnaath_Govindaraj_Base_Backend_AI_Engineer.pdf",
   status: "OPT through Feb 2029 · no sponsorship needed",
   tagline: "AI systems engineer & technical founder",
   portrait: "assets/portrait.jpg",
