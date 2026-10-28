@@ -39,7 +39,7 @@ const CONTENT = {
     { type: "cmd", text: "whoami" },
     { type: "out", text: "Gokulnaath Govindaraj — AI systems engineer, M.S. CS @ Wright State." },
     { type: "cmd", text: "cat now.md" },
-    { type: "out", text: "Training coding agents at Handshake AI (Helix). Shipped RAG at AriesView." },
+    { type: "out", text: "Training coding agents at Handshake AI. Shipped RAG at AriesView." },
     { type: "out", text: "Founder of AccioFirst — runner-up at Wright Venture 2026." },
     { type: "out", text: "Open source: 2 merged PRs in the chatflow-agent multi-agent framework." },
     { type: "cmd", text: "ls superpowers/" },

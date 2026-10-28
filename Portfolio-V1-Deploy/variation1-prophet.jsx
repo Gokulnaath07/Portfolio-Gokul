@@ -94,7 +94,7 @@ const ProphetApp = () => {
               At <b>AriesView</b>, an NEC-backed startup, I architected RAG pipelines. I designed the chunking, the hybrid BM25 + dense retrieval against Weaviate, and the 600-query evaluation framework that drove recall to 93%. When PostgreSQL choked at 2,000 RPS, I diagnosed the connection-pool saturation and dropped p95 latency from 1.8 seconds to 200ms.
             </p>
             <p>
-              Now I train coding agents at <b>Handshake AI</b>'s Helix project, designing Ralph loops and atomic prompt scaffolding so a headless Claude Code agent can iterate to a P2P/F2P-clean pull request. Every submission is a verified golden-solution PR.
+              Now I train coding agents at <b>Handshake AI</b>, designing Ralph loops and atomic prompt scaffolding so a headless Claude Code agent can iterate to a P2P/F2P-clean pull request. Every submission is a verified golden-solution PR.
             </p>
             <p className="p-jumpline">Continued on inside →</p>
           </div>
@@ -124,7 +124,7 @@ const ProphetApp = () => {
           <div className="p-bio-text">
             <p className="p-bio-quote">“The thing about being a junior engineer is nobody is going to hand you the right framing. So I started giving it to myself.”</p>
             <p>I'm a graduate of Wright State (M.S. CS, December 2025) and Anna University (B.E. Mechatronics, 2022). I'm based in San Ramon, CA, and open to relocation anywhere. {CONTENT.status}.</p>
-            <p>I am happiest when I'm <i>responsible for the whole thing</i>: the schema, the pipeline, the eval, the deploy. AccioFirst is the proof. The Legal Hub backend at AriesView is the proof. Helix is the proof.</p>
+            <p>I am happiest when I'm <i>responsible for the whole thing</i>: the schema, the pipeline, the eval, the deploy. AccioFirst is the proof. The Legal Hub backend at AriesView is the proof. My agent work at Handshake AI is the proof.</p>
           </div>
           <div className="p-bio-term">
             <VideoPortrait src={CONTENT.videoSrc} poster={CONTENT.portraitSquare} caption="A moving portrait — Taken during Wright Ventures." className="p-video" />
